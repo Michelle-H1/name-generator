@@ -217,9 +217,11 @@ function generateName() {
 nameMaleBtn.addEventListener("click", () => {
   let random = Math.floor(Math.random() * namesMale.length);
   nameOutput.textContent = namesMale[random];
+  nameOutput.style.border = "3px solid #89CFF0";
 });
 
 nameFemaleBtn.addEventListener("click", () => {
   let random = Math.floor(Math.random() * namesMale.length);
   nameOutput.textContent = namesFemale[random];
+  nameOutput.style.border = "3px solid #FFC1CC";
 });
